@@ -36,7 +36,7 @@ export default function SignIn() {
 
       if (res.ok) {
         dispatch(signInSuccess(data));
-        navigate('/');
+        navigate('/Home');
       }
     } catch (error) {
       dispatch(signInFailure(error.message));
@@ -47,14 +47,14 @@ export default function SignIn() {
       <div className='flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-5'>
         {/* left */}
         <div className='flex-1'>
-          <Link to='/' className='font-bold dark:text-white text-4xl'>
+          <Link to='/Home' className='font-bold dark:text-white text-4xl'>
             <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white'>
-              Yash's
+              Blog
             </span>
-            Blog
+            Market
           </Link>
           <p className='text-sm mt-5'>
-            This is a demo project. You can sign in with your email and password
+            This is a MERN stack project. You can sign in with your email and password
             or with Google.
           </p>
         </div>
@@ -97,7 +97,7 @@ export default function SignIn() {
             <OAuth />
           </form>
           <div className='flex gap-2 text-sm mt-5'>
-            <span>Dont Have an account?</span>
+            <span>Don't Have an account?</span>
             <Link to='/SignUp' className='text-blue-500'>
               Sign Up
             </Link>

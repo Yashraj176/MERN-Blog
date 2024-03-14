@@ -22,7 +22,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path='/Home' element={<Home />} />
-        <Route path='/About' element={<About />} />
+        <Route path='/about' element={<About />} />
         <Route path='/SignIn' element={<SignIn />} />
         <Route path='/SignUp' element={<SignUp />} />
         <Route path='/search' element={<Search />} />
@@ -34,7 +34,7 @@ export default function App() {
           <Route path='/update-post/:postId' element={<UpdatePost />} />
         </Route>
 
-        <Route path='/Projects' element={<Projects />} />
+        <Route path='/projects' element={<Projects />} />
         <Route path='/post/:postSlug' element={<PostPage />} />
       </Routes>
       <Footer />
